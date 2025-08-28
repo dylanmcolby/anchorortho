@@ -184,3 +184,35 @@ span.appointment-button.unavailable {
         /*font-size: .75em;*/
     }
 }
+
+/* Mobile overflow fixes for scheduler table */
+@media (max-width: 662px) {
+    #WAVE-appointment-scheduler .wave-table {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    /* Reduce arrow size and ensure arrows don't push width */
+    #WAVE-appointment-scheduler .table-arrow-selector {
+        width: 8% !important;
+    }
+    #WAVE-appointment-scheduler .table-arrow-selector a {
+        font-size: 2.75em;
+        top: -8px;
+    }
+
+    /* Let date headers auto-size within fixed layout and prevent overflow */
+    #WAVE-appointment-scheduler .table-date-header {
+        width: auto !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Prevent cell content from causing horizontal overflow */
+    #WAVE-appointment-scheduler th,
+    #WAVE-appointment-scheduler td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

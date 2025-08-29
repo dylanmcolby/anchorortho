@@ -291,7 +291,7 @@
 }
 
 #waveInquiryForm .wave-table td {
-    padding: 6px 3px
+    padding: 6px 3px;
 }
 
 #waveInquiryForm .wave-table tbody tr:nth-of-type(odd) {
@@ -349,8 +349,9 @@
 }
 
 #waveInquiryForm span.appointment-button.unavailable {
-    color: #ddd;
+    color: #7d7d7d;
     hyphens: auto;
+    font-size: 8px;
 }
 
 #waveInquiryForm .wave-completion-message-header {
@@ -388,7 +389,8 @@
 
 @media (max-width:662px) {
     #waveInquiryForm .wave-table td {
-        padding: 5px 3px
+        padding: 5px 3px;
+        font-size: 10px;
     }
 
     #waveInquiryForm .wave-time-display {
